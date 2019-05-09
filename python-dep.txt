@@ -1,0 +1,18 @@
+# This dependency assumes pytorch docker image as base runtime
+scipy
+gitpython
+torchnet
+tensorflow
+pydot
+tabulate
+pandas
+jupyterlab
+matplotlib
+qgrid
+graphviz
+ipywidgets
+bqplot
+pyyaml
+pytest
+xlsxwriter
+pretrainedmodels

@@ -1,0 +1,7 @@
+outputs/
+logs/
+distiller/
+pretrained-models.pytorch/
+.ipynb_checkpoints/
+latest_log_dir
+latest_log_file
