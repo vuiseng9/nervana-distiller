@@ -1,9 +1,13 @@
 # Using nervana-distiller
 *May'19*
 
-We rely on pre-built pytorch docker image and the rest of the operation will be carried out in docker runtime.
+This repo provides an operating enviroment for nervana-systems/distiller. Why? standardization on workflow. We rely on pre-built pytorch docker image and the rest of the operation will be carried out in docker runtime.
+
 ```
 git clone https://github.com/vuiseng9/nervana-distiller
+cd nervana-distiller
+
+# Launch pytorch docker runtime
 ./run_docker.sh
 
 # =========================================================
@@ -19,7 +23,11 @@ source env.sh
 
 # Scoring pretrained models - we can use this step to validate if environment is working correctly
 source scripts/run_eval_cadene_pretrainedmodels.sh
+
+# At this point, we may save the runtime as a docker image
+sudo docker commit <runtime id> nervana-distiller
 ```
+*vuiseng9 personal notes: Steps above reproducible in pytorch-tf-gpu of ml-docker*
 
 #### Launching Jupyter lab
 ```
