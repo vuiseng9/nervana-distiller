@@ -46,6 +46,7 @@ source scripts/run_eval_cadene_pretrainedmodels.sh
 ## Post-training Quantization
 
 Post-training quantization in distiller requires two passes: (1) Calibration, (2) Quantization
+
 Following is an example of generating calibration statistic using 5% of ImageNet dataset on Resnet18
 ```
 python ./distiller/examples/classifier_compression/compress_classifier.py \
